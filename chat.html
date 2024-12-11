@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Chatter Up</h1>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+      
+            <input type="text" id="message" placeholder="Type your message" required>
+    
+            <button id="send-btn">Send</button>
+        
+
+            <p>Logged in as: {{ username }} | <a href="{{ url_for('logout')}}">Logout</a></p>
+        </div>
+    </div>
+
+{% endblock %}
